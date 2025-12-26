@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Classic White Cotton T-Shirt",
+    "type": "simple",
+    "regular_price": "19.99",
+    "sku": "APP-TSH-WHT-001",
+    "description": "A classic white cotton t-shirt made from 100% breathable fabric. Ideal for everyday wear.",
+    "short_description": "Classic white cotton t-shirt",
+    "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800"
+  },
+  {
+    "name": "Men's Slim Fit Denim Jeans",
+    "type": "simple",
+    "regular_price": "59.99",
+    "sku": "APP-JNS-SLM-002",
+    "description": "Slim fit denim jeans with stretch fabric for comfort and durability.",
+    "short_description": "Slim fit stretch denim jeans",
+    "image_url": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=800"
+  },
+  {
+    "name": "Wireless Bluetooth Headphones",
+    "type": "simple",
+    "regular_price": "89.99",
+    "sku": "ELC-HDP-BT-003",
+    "description": "Over-ear wireless Bluetooth headphones with noise isolation and long battery life.",
+    "short_description": "Wireless over-ear Bluetooth headphones",
+    "image_url": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
+  },
+  {
+    "name": "Stainless Steel Water Bottle (1L)",
+    "type": "simple",
+    "regular_price": "24.99",
+    "sku": "HOM-WTB-STEEL-004",
+    "description": "Insulated stainless steel water bottle that keeps drinks cold for 24 hours.",
+    "short_description": "1L insulated steel water bottle",
+    "image_url": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=800"
+  },
+  {
+    "name": "Ergonomic Office Chair",
+    "type": "simple",
+    "regular_price": "199.99",
+    "sku": "FUR-CHR-ERG-005",
+    "description": "Ergonomic office chair with lumbar support and adjustable height.",
+    "short_description": "Adjustable ergonomic office chair",
+    "image_url": "https://images.unsplash.com/photo-1503602642458-232111445657?w=800"
+  },
+  {
+    "name": "Smart Fitness Tracker Watch",
+    "type": "simple",
+    "regular_price": "129.99",
+    "sku": "ELC-WCH-FIT-006",
+    "description": "Fitness tracker with heart rate monitoring, sleep tracking, and step counter.",
+    "short_description": "Smart fitness tracker watch",
+    "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800"
+  },
+  {
+    "name": "Organic Green Tea (100 Bags)",
+    "type": "simple",
+    "regular_price": "14.99",
+    "sku": "FOD-TEA-GRN-007",
+    "description": "Premium organic green tea sourced from sustainable farms.",
+    "short_description": "Organic green tea bags",
+    "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800"
+  },
+  {
+    "name": "Leather Laptop Backpack",
+    "type": "simple",
+    "regular_price": "109.99",
+    "sku": "BAG-BKP-LTH-008",
+    "description": "Premium leather laptop backpack with padded compartments.",
+    "short_description": "Leather laptop backpack",
+    "image_url": "https://images.unsplash.com/photo-1511385348-a52b4a160dc2?w=800"
+  },
+  {
+    "name": "Ceramic Coffee Mug Set (4 pcs)",
+    "type": "simple",
+    "regular_price": "34.99",
+    "sku": "HOM-MUG-CER-009",
+    "description": "Set of 4 ceramic coffee mugs with modern matte finish.",
+    "short_description": "Ceramic coffee mug set",
+    "image_url": "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=800"
+  },
+  {
+    "name": "Wireless Mechanical Keyboard",
+    "type": "simple",
+    "regular_price": "149.99",
+    "sku": "ELC-KBD-MECH-010",
+    "description": "Wireless mechanical keyboard with RGB backlight and rechargeable battery.",
+    "short_description": "Wireless RGB mechanical keyboard",
+    "image_url": "https://images.unsplash.com/photo-1503602642458-232111445657?w=800"
+  },
+  {
+    "name": "Running Shoes – Men",
+    "type": "simple",
+    "regular_price": "99.99",
+    "sku": "APP-SHO-RUN-011",
+    "description": "Lightweight running shoes designed for daily training and comfort.",
+    "short_description": "Men's lightweight running shoes",
+    "image_url": "https://images.unsplash.com/photo-1585386959984-a41552231691?w=800"
+  },
+  {
+    "name": "Aromatherapy Essential Oil Set",
+    "type": "simple",
+    "regular_price": "39.99",
+    "sku": "HOM-OIL-ESS-012",
+    "description": "Set of 6 essential oils for relaxation, focus, and stress relief.",
+    "short_description": "Aromatherapy essential oil set",
+    "image_url": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800"
+  },
+  {
+    "name": "Portable Bluetooth Speaker",
+    "type": "simple",
+    "regular_price": "69.99",
+    "sku": "ELC-SPK-BT-013",
+    "description": "Compact Bluetooth speaker with deep bass and waterproof design.",
+    "short_description": "Portable waterproof speaker",
+    "image_url": "https://images.unsplash.com/photo-1512499617640-c2f999fe44f9?w=800"
+  },
+  {
+    "name": "Wooden Dining Table (6 Seater)",
+    "type": "simple",
+    "regular_price": "599.99",
+    "sku": "FUR-TBL-WOD-014",
+    "description": "Solid wood dining table suitable for modern and classic interiors.",
+    "short_description": "6-seater wooden dining table",
+    "image_url": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800"
+  },
+  {
+    "name": "Skincare Gift Box Set",
+    "type": "simple",
+    "regular_price": "79.99",
+    "sku": "BEA-SKN-GFT-015",
+    "description": "Complete skincare gift set with cleanser, serum, and moisturizer.",
+    "short_description": "Skincare gift box set",
+    "image_url": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=800"
+  }
+]

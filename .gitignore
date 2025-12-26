@@ -1,3 +1,6 @@
 /reviews
 .DS_Store
 /questions-split
+claude.md
+.claude/
+/.claude
