@@ -1,8 +1,8 @@
 #!/bin/bash
 
 WC_URL="https://benitto-backend.ngrok.dev"
-CONSUMER_KEY="ck_35e07b78412714c61c1c180b1e0f42b52bfd826c"
-CONSUMER_SECRET="cs_d9561f06e27a62aca9f5289bd3393b1ccae541ae"
+CONSUMER_KEY="ck_53cafae6ae70c90039546bdcce51da9bb0fa3749"
+CONSUMER_SECRET="cs_c6648553e3f2519f19c1ddef8934800fe6b6c672"
 # WC_URL="https://floralwhite-wildcat-321136.hostingersite.com"
 # CONSUMER_KEY="ck_ad3107d90850e739f16076f09b6060f0ad7ad084"
 # CONSUMER_SECRET="cs_e9a7c184fadca4c59073abec0de3d9f7a2fd97c6"
@@ -12,7 +12,7 @@ TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
 # Output CSV file with timestamp
 OUTPUT_FILE="../fake_reviews_${TIMESTAMP}.csv"
 # Number of reviews per product
-REVIEWS_PER_PRODUCT=110
+REVIEWS_PER_PRODUCT=50
 # Number of store reviews (without product_id)
 STORE_REVIEWS_COUNT=1
 
