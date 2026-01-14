@@ -1,7 +1,8 @@
 SELECT
 	date::date,
 	integrations.store_url,
-	integrations.type
+	integrations.type,
+	integrations.status
 FROM
 	generate_series('2025-08-18'::date, CURRENT_DATE, interval '1 day') AS all_dates (date)
 	LEFT JOIN integrations ON integrations.created_at::date = all_dates.date
@@ -117,7 +118,7 @@ ORDER BY day DESC;
 
 -- How may new order reviews created in each day
 SELECT
-	reviews.created_at::date-1 AS DAY,
+	reviews.created_at::date AS DAY,
 	COUNT(*) AS reviews,
 	reviews.org_uuid,
 	integrations.store_url
@@ -127,9 +128,9 @@ FROM
 WHERE
 	reviews.review_parent_uuid IS NULL
 	AND reviews.order_uuid IS NOT NULL
-	AND reviews.created_at::date = CURRENT_DATE - 1
+	AND reviews.created_at::date = CURRENT_DATE
 GROUP BY
-	reviews.created_at::date - 1,
+	reviews.created_at::date,
 	reviews.org_uuid,
 	integrations.store_url
 ORDER BY
@@ -150,7 +151,6 @@ FROM
 			message_histories
 		where trigger_type = 'order_review_request'
 		and skipped = false
-		and date(created_at) = CURRENT_DATE
 		GROUP BY
 			org_uuid
 	) AS email_histories
@@ -160,3 +160,5 @@ ORDER BY
 
 
 select subscriptions.org_uuid, review_requests_sent, integrations.store_url from subscriptions left join integrations on integrations.org_uuid = subscriptions.org_uuid order by review_requests_sent desc;
+
+
