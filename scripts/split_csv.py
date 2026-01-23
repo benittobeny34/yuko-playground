@@ -6,10 +6,10 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 input_file = os.path.join(
     BASE_DIR,
-    "spherehendry.csv",
+    "nutrix_final.csv",
 )
-output_dir = os.path.join(BASE_DIR, "..", "reviews", "sphereandsundry")
-chunk_size = 1200
+output_dir = os.path.join(BASE_DIR, "..", "reviews", "nutrix")
+chunk_size = 850
 
 # Read the CSV file
 with open(input_file, "r", encoding="utf-8") as f:

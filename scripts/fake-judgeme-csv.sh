@@ -1,8 +1,8 @@
 #!/bin/bash
 
 WC_URL="https://benitto-backend.ngrok.dev"
-CONSUMER_KEY="ck_53cafae6ae70c90039546bdcce51da9bb0fa3749"
-CONSUMER_SECRET="cs_c6648553e3f2519f19c1ddef8934800fe6b6c672"
+CONSUMER_KEY="ck_074f9692625287a06928986353f45dd3eb3b0149"
+CONSUMER_SECRET="cs_15826810396729e825ef2911932255ca6e3e9677"
 # WC_URL="https://floralwhite-wildcat-321136.hostingersite.com"
 # CONSUMER_KEY="ck_ad3107d90850e739f16076f09b6060f0ad7ad084"
 # CONSUMER_SECRET="cs_e9a7c184fadca4c59073abec0de3d9f7a2fd97c6"
@@ -12,7 +12,7 @@ TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
 # Output CSV file with timestamp
 OUTPUT_FILE="../fake_reviews_${TIMESTAMP}.csv"
 # Number of reviews per product
-REVIEWS_PER_PRODUCT=50
+REVIEWS_PER_PRODUCT=15
 # Number of store reviews (without product_id)
 STORE_REVIEWS_COUNT=1
 
@@ -27,9 +27,9 @@ NAMES=(
 
 # Sample public placeholder images
 IMAGES=(
-  # "https://images.pexels.com/photos/30716366/pexels-photo-30716366.jpeg"
-  # "https://picsum.photos/seed/pic2/300/300"
-  # "https://picsum.photos/seed/pic3/300/300"
+  "https://images.pexels.com/photos/30716366/pexels-photo-30716366.jpeg"
+  "https://picsum.photos/seed/pic2/300/300"
+  "https://picsum.photos/seed/pic3/300/300"
   # "https://picsum.photos/seed/pic4/300/300"
   # "https://picsum.photos/seed/pic5/300/300"
 )
@@ -140,8 +140,8 @@ while IFS=, read -r PRODUCT_ID PRODUCT_HANDLE; do
 
         # Randomly add up to 3 pictures
         PICS=""
-        PIC_COUNT=0
-        # PIC_COUNT=$((RANDOM % 4)) # 0–3
+        # PIC_COUNT=0
+        PIC_COUNT=$((RANDOM % 4)) # 0–3
         if (( PIC_COUNT > 0 )); then
             for j in $(seq 1 $PIC_COUNT); do
                 PIC=${IMAGES[$RANDOM % ${#IMAGES[@]}]}
@@ -211,8 +211,8 @@ for i in $(seq 1 $STORE_REVIEWS_COUNT); do
 
     # Randomly add up to 3 pictures
     PICS=""
-    PIC_COUNT=0
-    # PIC_COUNT=$((RANDOM % 4)) # 0–3
+    # PIC_COUNT=2
+    PIC_COUNT=$((RANDOM % 4)) # 0–3
     if (( PIC_COUNT > 0 )); then
         for j in $(seq 1 $PIC_COUNT); do
             PIC=${IMAGES[$RANDOM % ${#IMAGES[@]}]}

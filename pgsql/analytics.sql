@@ -6,6 +6,7 @@ SELECT
 FROM
 	generate_series('2025-08-18'::date, CURRENT_DATE, interval '1 day') AS all_dates (date)
 	LEFT JOIN integrations ON integrations.created_at::date = all_dates.date
+	where type = 'woocommerce'
 ORDER BY
 	all_dates.date DESC;
 
