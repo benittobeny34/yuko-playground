@@ -36,30 +36,28 @@ FROM
 	duplicates;
 
 -- Time Difference
-SELECT
-        id,
+WITH review_timings AS (
+  SELECT
+    *,
+    created_at - lag(created_at) OVER (
+      PARTITION BY
         customer_uuid,
         product_uuid,
-        review_content,
-        created_at,
-        created_at - lag(created_at) OVER (
-            PARTITION BY
-                customer_uuid,
-                product_uuid,
-                order_uuid
-            ORDER BY
-                created_at
-        ) AS time_since_last_review
-    FROM
-    reviews
-WHERE
+        order_uuid,
+        trim(review_content)
+      ORDER BY created_at
+    ) AS time_since_last_review
+  FROM reviews
+  WHERE
     type = 'review'
     AND review_parent_uuid IS NULL
     AND deleted_at IS NULL
     AND order_uuid IS NOT NULL
-    AND status != 'trash';
-    )
-
+    AND status != 'trash'
+)
+SELECT *
+FROM review_timings
+WHERE time_since_last_review < INTERVAL '1 day';
 -- example query to cross check
 WITH duplicates_identified AS (
   SELECT
